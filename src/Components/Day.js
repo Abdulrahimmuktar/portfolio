@@ -6,7 +6,7 @@ function Day({day}) {
   return (
     <div>
         <li className='siku'>
-          <img src={day?.day?.condition?.icon}/>
+          <img src={day?.day?.condition?.icon} alt='condtion icon'/>
         <p>{formatDay(day?.date)}</p>
         <p style={{fontSize: "15px"}}>{day?.day?.mintemp_c}<sup>0</sup> - {day?.day?.maxtemp_c}<sup>0</sup></p>
     </li>
