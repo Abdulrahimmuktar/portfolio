@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import Weather from './Components/Weather';
-import { useWeather } from './hooks/useWeather';
+// import { useWeather } from './hooks/useWeather';
 import Input from './Components/Input';
 import { useWeatherByLocation } from './hooks/useWeatherByLocation';
 import Loader from './Components/Loader';
+import { useState } from 'react';
 
 // function App() {
 //   const [location,SetLocation] = useState()
@@ -66,7 +67,7 @@ function App() {
   // }, [])
 
   const [location,setLocation] = useState("")
-  const{isLoading, weather,error} = useWeatherByLocation(location)
+  const{isLoading, weather,} = useWeatherByLocation(location)
 
 
   function handleChangeLocation(loc){
